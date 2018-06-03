@@ -1,0 +1,34 @@
+
+<div *ngIf="place">
+  <h2>{{ place.name | uppercase}} Details</h2>
+ <div><span>Place id: </span>{{place.id}}</div>
+  <div>
+    <label>Place name:
+      <input [(ngModel)]="place.name" placeholder={{place.name}}/>
+    </label>
+  </div>
+  <div>
+    <label>Place city:
+      <input [(ngModel)]="place.city" placeholder={{place.city}}/>
+    </label>
+  </div>
+  <div>
+    <label>Place country:
+      <input [(ngModel)]="place.country" placeholder={{place.country}}/>
+    </label>
+  </div>
+  <div>
+    <label>Number of cookies left:
+      <input [(ngModel)]="place.numberOfCookies" placeholder={{place.numberOfCookies}}/>
+    </label>
+  </div>
+  <div>
+    <label>Number of coffie left:
+      <input [(ngModel)]="place.numberOfCoffie" placeholder={{place.numberOfCoffie}}/>
+    </label>
+  </div>
+ <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+</div>
+
+
